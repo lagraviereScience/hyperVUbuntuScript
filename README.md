@@ -10,6 +10,42 @@ Second, the hard drive, by default the size is like around 15GB or something. An
 # Setting up network with Netplan
 https://gist.github.com/lagraviereScience/310bd5759ab20a52c6cccffd89c4550c
 
+Edit this file
+```bash
+sudo nano /etc/netplan/01-network-manager-all.yaml
+```
+
+Replace whatever is in the file with the code below
+
+*You can change to OpenDNS by using those IP addresses: 208.67.222.222, 208.67.220.220*
+```yaml
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth0:
+      nameservers:
+        addresses:
+        - 8.8.8.8
+        - 8.8.4.4
+      dhcp4: yes
+```
+
+Then you can apply this netplan
+```bash
+sudo netplan apply
+```
+
+Try to see if it works using:
+```bash
+sudo apt update
+```
+If you can update your apt local repo -> then network is working properly
+
+You can also simply use:
+```bash
+ping google.com
+```
 
 # Keywords
 
