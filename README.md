@@ -11,8 +11,10 @@ Second, the hard drive, by default the size is like around 15GB or something. An
 https://gist.github.com/lagraviereScience/310bd5759ab20a52c6cccffd89c4550c
 
 
-#keywords
+# keywords
+
 This is just me putting a bunch of relevant keywords for this github gists to be indexed properly (hopefully)
+
 * hyperV
 * hyper-v
 * hyper v
