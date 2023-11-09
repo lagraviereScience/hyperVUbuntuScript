@@ -1,4 +1,4 @@
-# bunch of scripts for Ubuntu on HyperV on Windows
+# Scripts for Ubuntu on HyperV on Windows
 Because the quick create is broken AF right now
 
 Let me explain: when you create a VM using the QuickCreate feature with HyperV, and in particular, if you're creating a 22.04 (this is probably true for any version of Ubuntu), a bunch of stuff won't be correct.
